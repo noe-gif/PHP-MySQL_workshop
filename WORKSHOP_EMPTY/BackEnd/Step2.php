@@ -15,12 +15,11 @@
                 ROW3,
                 RULE1
             )";
+        
         /* function that takes the mysqli object as first parameter and the name as it's second */
         if (mysqli_query(PARAM1, PARAM2))
-            echo $name." created successfully";  
-        else
-           echo "There was a problem when creating ".$name;
-        mysqli_close($link);
+            return true;
+        return false;
    }
 
     /* Hide php default errors messages to user */
