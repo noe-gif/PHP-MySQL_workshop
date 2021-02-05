@@ -8,10 +8,10 @@
     function AddContentTable($link, $name, $password, $table)
     {
         /* step 1: fill the gaps with the right query (sql syntax + php variables) */
-        $query = "XXXXXX $table XXXXXXXXXXXX (XXXXXXX)";
+        $query = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
         /* function that takes the mysqli object as first parameter and the name as it's second */
-        if (mysqli_query(PARAM2, PARAM1))
+        if (mysqli_query($link, $query))
             return true;
         return false;
     }
