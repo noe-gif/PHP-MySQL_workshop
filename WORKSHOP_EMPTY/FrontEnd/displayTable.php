@@ -15,17 +15,17 @@
     <?php 
         $link = ConnectDb();
         $name = 'tablestep2';
-        $case1 = AddContentTable($link, 'didier', 'motdepasselol', $name);
+        $case1 = AddContentTable($link, 'dddddd', 'motdepasselol', $name);
         $case2 = ShowContentTable($link, $name);
 
         //checking the return of AddContentTable function 
         if ($case1 == 0) { ?>
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success" role="alert" style="top: 30%;">
                 data successfully added
             </div>
-        <?php } else if ($case1 == 1) { ?>
+        <?php } else { ?>
             <div class="alert alert-danger" role="alert" style="top: 25%;">
-                something wrong when adding (check query)
+                something wrong with the query
             </div>
         <?php }
 
