@@ -15,8 +15,8 @@
     <?php       
         $link = ConnectDb();
         $name = "tablestep2";
-        $result = deleteConditionTable($link, $name, "password='motdepasselol'");
-        //$result = deleteContentTable($link, $name);
+        $result = deleteContentTable($link, $name);
+        //$result = deleteConditionTable($link, $name, "password='motdepasselol'");
         ShowContentTable($link, $name);
 
         if ($result) { ?>

@@ -14,7 +14,7 @@
         $queryResetId = "ALTER TABLE $table AUTO_INCREMENT = 1;";
 
         /* fill the gaps so that both queries are executed */
-        if (!mysqli_query($link, $XXXXXXX) || !mysqli_query($link, $XXXXXXX))
+        if (!mysqli_query($XXXXXXX, $XXXXXXX) || !mysqli_query($XXXXXXX, $XXXXXXX))
             return false;
         return true;   
     }
@@ -23,7 +23,7 @@
     function deleteConditionTable($link, $table, $condition)
     {
         /* fill the gap to execute the right query */
-        $queryDelete = "DELETE FROM $table WHERE  $condition;";
+        $queryDelete = "XXXXXXX";
 
         if (!mysqli_query($link, $queryDelete))
             return false;

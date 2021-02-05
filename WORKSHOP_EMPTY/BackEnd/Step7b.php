@@ -12,7 +12,7 @@
     /* getting the data sent from Step7.js */
     $var =  $_POST['dropList'];
     /* fill the gaps to get the right data that will be sent later */
-    $result = $link -> query("SELECT XXXXXX, XXXXXX, XXXXXX, XXXXXX FROM XXXXXX WHERE XXXXXX='$var'");
+    $result = $link -> query("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     $credits = array();
     /* as long as you get result you put it on the array */
     while ($row = mysqli_fetch_object($result))
