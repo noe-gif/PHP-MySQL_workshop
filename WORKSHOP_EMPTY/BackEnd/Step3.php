@@ -12,8 +12,8 @@
 
         /* function that takes the mysqli object as first parameter and the name as it's second */
         if (mysqli_query(PARAM2, PARAM1))
-            return false;
-        return true;
+            return true;
+        return false;
     }
 
 
