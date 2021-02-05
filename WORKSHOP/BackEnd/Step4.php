@@ -22,9 +22,8 @@
             /* fill the gap to execute the query */
             if($result->execute())
                 return true;
-            else
-                return false;
             $result->close();
+            return false;
         }
         $link->close();
         return false;

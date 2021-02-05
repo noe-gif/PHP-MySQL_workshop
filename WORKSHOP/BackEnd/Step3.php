@@ -11,24 +11,21 @@
         $query = "INSERT INTO $table (id, name, password) VALUES ('', '$name', '$password')";
 
         /* execution of the query */
-        if (mysqli_query($link, $query))
-            return 1;
-        return 0;
+        if (!mysqli_query($link, $query))
+            return false;
+        return true;
     }
 
 
     /* function that shows the data in table with the table's name taken in parameter */
     function ShowContentTable($link, $table)
     {
-        if (strcmp($table, "tablestep2") != 0)
-            return 1;
-
         /* step 1: fill the gaps with the right query (sql syntax) */
         $query = "SELECT * FROM tablestep2";
 
         /* execution of the query */
         if (!mysqli_query($link, $query))
-            return 2;
+            return false;
 
         /* function that you don't need to focus on (prints some HTML) */
         print_html();
@@ -48,7 +45,7 @@
             }
         }
         echo "</table></div>";
-        return 0;
+        return true;
     }
 
 
