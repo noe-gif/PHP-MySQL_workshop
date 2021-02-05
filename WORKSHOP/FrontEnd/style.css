@@ -4,6 +4,46 @@ body
     overflow: overlay;
 }
 
+h1
+{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.title
+{
+    font-size: 6rem;
+    margin-top: 15vh;
+}
+
+.nav
+{
+    position: absolute;
+    top: 42vh;
+    width: 70vw;
+    margin: 0 15vw;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+}
+  
+.nav li
+{
+    display: inline-block;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    width: 9vw;
+    min-width: 100px;
+    margin: 6px 0.37vw;
+    padding: 6px 12px;
+    background-color: #198754;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+}
+
 .tableStyle
 {
     width:  40%;

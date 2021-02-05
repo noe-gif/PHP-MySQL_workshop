@@ -20,7 +20,7 @@
             <div class="alert alert-success" role="alert">
                 Droplist successfully created
             </div>
-        <button onclick="location.href='index.html'" type="button" class="btn btn-success">Finish</button>
+        <button onclick="location.href='done.html'" type="button" class="btn btn-success">Finish</button>
         <?php } else if ($case1 == 0) { ?>
             <div class="alert alert-danger" role="alert">
                 something wrong with your functions
