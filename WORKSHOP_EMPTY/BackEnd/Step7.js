@@ -29,10 +29,10 @@ function displayDataFromId()
                         var Prenom = data[a].XXXXXX;
                         var Tel = data[a].XXXXXX;
                         var Email = data[a].XXXXXX;
-                        html += "Nom du chercheur :    " + XXXXXX + "<br>";
+                        html += "<p id=\"dataSearcher\">Nom du chercheur :    " + XXXXXX + "<br>";
                         html += "Prénom du chercheur :    " + XXXXXX + "<br>";
                         html += "Tel du chercheur :    " + XXXXXX + "<br>";
-                        html += "Email du chercheur :    " + XXXXXX + "<br>";
+                        html += "Email du chercheur :    " + XXXXXX + "<br></p>";
                     }
                     document.getElementById("credits").innerHTML = html;   
                 }

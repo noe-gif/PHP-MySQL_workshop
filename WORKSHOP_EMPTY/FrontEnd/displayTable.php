@@ -19,19 +19,18 @@
         $case2 = ShowContentTable($link, $name);
 
         //checking the return of AddContentTable function 
-        if ($case1 == 0) { ?>
-            <div class="alert alert-success" role="alert" style="top: 30%;">
+        if ($case1) { ?>
+            <div class="alert alert-success" role="alert" style="top: 12%;">
                 data successfully added
             </div>
         <?php } else { ?>
-            <div class="alert alert-danger" role="alert" style="top: 25%;">
+            <div class="alert alert-danger" role="alert" style="top: 12%;">
                 something wrong with the query
             </div>
         <?php }
 
-
         //checking the return of ShowContentTable function
-        if ($case2 == 1) { ?>
+        if ($case2) { ?>
                 <div class="alert alert-success" role="alert">
                     ”<?php echo $name; ?>” successfully displayed
                 </div>

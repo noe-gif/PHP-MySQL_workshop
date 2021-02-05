@@ -7,7 +7,8 @@ function displayDataFromId()
 {
     dropList = document.getElementById("idDroplist").value;
     console.log(dropList);
-    if (dropList != "") {
+    if (dropList != "")
+    {
         var buttonSend = document.addEventListener('change', function(event) // 1*
         {
             var xhr = new XMLHttpRequest(); // 2*

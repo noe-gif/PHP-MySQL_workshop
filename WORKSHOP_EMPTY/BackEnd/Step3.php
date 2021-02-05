@@ -11,9 +11,9 @@
         $query = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
         /* function that takes the mysqli object as first parameter and the name as it's second */
-        if (mysqli_query($link, $query))
-            return true;
-        return false;
+        if (!mysqli_query($link, $query))
+            return false;
+        return true;
     }
 
 
