@@ -54,17 +54,15 @@
 
     function print_html()
     {
-        echo "<table class='table table-dark table-striped' style='width: 500px; height: 30px; text-align: center; top: 10%; left:35%; position:absolute;'>
+        echo "<div class='tableStyle'>
+            <table class='table table-dark table-striped'>
                 <tr>
                     <td> <font face='Arial'>Id</font> </td>
                     <td> <font face='Arial'>Date début</font> </td>
                     <td> <font face='Arial'>Id du chercheur</font> </td>
                     <td> <font face='Arial'>Nom</font> </td>
                     <td> <font face='Arial'>Prénom</font> </td>
-                </tr>
-            </table>
-            <div style='width: 500px; height: 200px; text-align: center; overflow: auto; overflow: overlay; top: 14%; left:35%; position:absolute;'>
-            <table class='table table-dark table-striped'>";
+                </tr>";
     }
 
     error_reporting(0);

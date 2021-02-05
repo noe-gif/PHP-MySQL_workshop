@@ -25,10 +25,10 @@ function displayDataFromId()
                         var Prenom = data[a].Prenom;
                         var Tel = data[a].Telephone;
                         var Email = data[a].Email;
-                        html += "Nom du chercheur :    " + Nom + "<br>";
+                        html += "<p id=\"dataSearcher\">Nom du chercheur :    " + Nom + "<br>";
                         html += "Prénom du chercheur :    " + Prenom + "<br>";
                         html += "Tel du chercheur :    " + Tel + "<br>";
-                        html += "Email du chercheur :    " + Email + "<br>";
+                        html += "Email du chercheur :    " + Email + "<br></p>";
                     }
                     document.getElementById("credits").innerHTML = html;   
                 }
