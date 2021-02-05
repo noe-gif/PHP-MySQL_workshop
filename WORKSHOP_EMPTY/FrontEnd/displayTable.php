@@ -19,34 +19,28 @@
         $case2 = ShowContentTable($link, $name);
 
         //checking the return of AddContentTable function 
-        if ($case1 == 1) { ?>
+        if ($case1 == 0) { ?>
             <div class="alert alert-success" role="alert">
                 data successfully added
             </div>
-        <?php } else if ($case1 == 0) { ?>
+        <?php } else if ($case1 == 1) { ?>
             <div class="alert alert-danger" role="alert" style="top: 25%;">
-                something wrong with the query
+                something wrong when adding (check query)
             </div>
         <?php }
 
 
         //checking the return of ShowContentTable function
-        if ($case2 == 0) { ?>
+        if ($case2 == 1) { ?>
                 <div class="alert alert-success" role="alert">
                     ”<?php echo $name; ?>” successfully displayed
                 </div>
                 <button onclick="location.href='bindAndHash.php'" type="button" class="btn btn-success">Step 4</button>
-        <?php } else if ($case2 == 1) { ?>
+        <?php } else { ?>
                 <div class="alert alert-danger" role="alert">
-                    Wrong table name ”<?php echo $name; ?>”
+                    Something wrong when displaying (check query)
                 </div>
                 <button disabled="true" type="button" class="btn btn-danger">Erreur</button>
-        <?php } else if ($case2 == 2) { ?>
-                <div class="alert alert-danger" role="alert">
-                    Something wrong with the query
-                </div>
-                <button disabled="true" type="button" class="btn btn-danger">Erreur</button>
-        <?php }
-    ?>
+        <?php } ?>
 </body>
 </html>
