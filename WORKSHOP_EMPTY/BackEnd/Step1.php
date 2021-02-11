@@ -11,11 +11,11 @@
         $dbhost = "XXXXXXXX";
         $dbuser = "XXXXXXXX";
         $dbpassword = "XXXXXXXX";
-        $db = "XXXXXXXX";
+        $dbname = "XXXXXXXX";
 
         /* new instance(object) of mysqli class(which links the mysql
         server(displayed in our phpMyAdmin) as well as getting all our required functions) */
-        $mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $db);
+        $mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
 
         /* catch error */
         if ($mysqli->connect_errno)
