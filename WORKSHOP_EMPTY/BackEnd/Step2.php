@@ -16,7 +16,7 @@
                 RULE1
             )";
         
-        /* function that takes the mysqli object as first parameter and the name as it's second */
+        /* function that takes the mysqli object as first parameter and the query as it's second */
         if (mysqli_query($XXXXXX, $XXXXXX))
             return true;
         return false;
