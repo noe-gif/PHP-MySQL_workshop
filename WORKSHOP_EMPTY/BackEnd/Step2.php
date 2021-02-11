@@ -18,8 +18,8 @@
         
         /* function that takes the mysqli object as first parameter and the query as it's second */
         if (mysqli_query($XXXXXX, $XXXXXX))
-            return true;
-        return false;
+            return false;
+        return true;
    }
 
     /* Hide php default errors messages to user */
